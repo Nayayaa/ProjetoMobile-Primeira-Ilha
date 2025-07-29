@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/blue_container"
+            android:paddingTop="48dp"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/imagem1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/imagemNumero1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Número da pergunta 1"
+                android:src="@drawable/numero1" />
+
+            <TextView
+                android:id="@+id/textViewTituloPergunta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text=" IDENTIFICAÇÃO DE DOMICÍLIO"
+                android:fontFamily="@font/manrope_bold"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="ENDEREÇO:"
+            android:fontFamily="@font/manrope_bold"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/blue_box"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUA:"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/manrope_semibold"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ruaEditText"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/manrope_semibold"
+                android:hint="R. Marina do Sol" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NÚMERO:"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/manrope_semibold"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/NumeroEditText"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/manrope_semibold"
+                android:hint="Insira o número:" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="ESPÉCIE DE DOMICÍLIO OCUPADO:"
+            android:textColor="#000000"
+            android:fontFamily="@font/manrope_bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/domicilioRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/blue_box"
+            android:padding="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <RadioButton
+                android:id="@+id/radioDomicilioParticularPermanenteOcupado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_semibold"
+                android:text="DOMICÍLIO PARTICULAR PERMANENTE OCUPADO" />
+
+            <RadioButton
+                android:id="@+id/radioDomicilioParticularImprovisadoOcupado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/manrope_semibold"
+                android:text="DOMICÍLIO PARTICULAR IMPROVISADO OCUPADO" />
+
+            <RadioButton
+                android:id="@+id/radioDomicilioColetivoComMorador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/manrope_semibold"
+                android:text="DOMICÍLIO COLETIVO COM MORADOR" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#d6eef0"
+                android:text="Anterior"
+                android:textColor="#006680"
+                android:fontFamily="@font/manrope_semibold"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#006680"
+                android:text="Próximo"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/manrope_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#C7EAE9"
+    android:paddingTop="?attr/actionBarSize"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="216dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/imagem1"
+        android:contentDescription="Logo do Aplicativo" />
+
+    <Button
+        android:id="@+id/goToLoginButton"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#006680"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/goToCadastroButton"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#006680"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="Cadastro" />
+
+</LinearLayout>
